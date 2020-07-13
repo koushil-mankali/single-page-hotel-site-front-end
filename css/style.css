@@ -1,0 +1,518 @@
+*{
+    margin:0px;
+    padding:0;
+    box-sizing:border-box;
+    /* overflow-x:hidden; */
+}
+/* -------------------------------Header----------------------------- */
+.header{
+    width:100%;
+    height:20vh;
+    /* background-color: brown; */
+}
+#mk{
+    line-height:20vh;
+    font-size:4rem;
+    font-weight:bold;
+    margin:0 0 0 30px;
+    color:#FFCB05;
+    font-family: sans-serif;
+}
+#hotels{
+    line-height:20vh;
+    font-weight:bold;
+    font-size:4rem;
+    color:#404040;
+    font-family: sans-serif;
+}
+@media all and (max-width:400px){
+    #mk{
+        line-height:20vh;
+        font-size:3rem;
+        font-weight:bold;
+        margin:0 0 0 30px;
+        color:#FFCB05;
+        font-family: sans-serif;
+    }
+    #hotels{
+        line-height:20vh;
+        font-weight:bold;
+        font-size:3rem;
+        color:#404040;
+        font-family: sans-serif;
+    }
+}
+/* -------------------------------Header End----------------------------- */
+
+
+/* -------------------------------Nav----------------------------- */
+.nav{
+    position: sticky;
+    top:0;
+    width:100%;
+    height:auto;
+    padding:10px;
+    background-color:black;
+    display:flex;
+    z-index:1000;
+}
+.ul{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.li{
+    color:white;
+    list-style: none;
+}
+.li:hover{
+    color:sandybrown;
+}
+.search{
+    display:flex;
+    align-self:center;
+    border-radius:25px;
+    border:none;
+    height:auto;
+    width:20%;
+    margin:0px 20px;
+    padding:10px;
+}
+.search:focus{
+    outline: none;
+}
+@media all and (max-width:700px){
+    .nav{
+       flex-wrap: wrap;
+    }
+    .search{
+        display:flex;
+        align-content: flex-end;
+        margin:20px auto 5px;
+        border-radius:25px;
+        border:none;
+        height:auto;
+        width:60%;
+        padding:10px;
+    }
+}
+/* -------------------------------Nav End----------------------------- */
+
+/* -------------------------------Slider----------------------------- */
+.slider{
+    width:100%;
+    height:60vh;
+}
+.imag{
+    width: inherit;
+    height:inherit;
+}
+.imgtext{
+    position: absolute;
+    margin:100px 0 0 40px;
+}
+#wel{
+    color:white;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+#h1{
+    color:white;
+    font-size:5rem;
+    margin-bottom:20px;
+}
+#loremp{
+    color:white;
+    font-size:1.5rem;
+}
+.btn{
+    position: absolute;
+    margin-top:10px;
+    height:30px;
+    width:100px;
+    background-color: lawngreen;
+    border:none;
+    box-shadow: 0 0 5px 0px lawngreen;
+    text-align: center;
+}
+.btn:focus{
+    outline: none;
+}
+@media all and (max-width:560px){
+    #wel{
+        color:white;
+        font-size:1.5rem;
+        margin-bottom:20px;
+    }
+    #h1{
+        color:white;
+        font-size:3rem;
+        margin-bottom:20px;
+    }
+    #loremp{
+        color:white;
+        font-size:1rem;
+    }
+}
+/* -------------------------------Slider End----------------------------- */
+
+
+
+/* -------------------------------Banner----------------------------- */
+.banner{
+    height:auto;
+    width:100%;
+    background-color: #FFD01D;
+    position: relative;
+    display:grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    padding:20px;    
+}
+.bspan{
+    width:100%;
+    height:inherit;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-size:3rem;
+    text-align: center;
+}
+.hotelsym{
+    font-size: 6rem;
+    border-radius:50%;
+    padding:10px;
+    background-color: red;
+    margin:0 10px 0 -20px;
+}
+@media all and (max-width:900px){
+    .bspan{
+        width:100%;
+        height:inherit;
+        display:flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        font-size:2rem;
+        text-align: center;
+    }
+    .hotelsym{
+        font-size: 4rem;
+        border-radius:50%;
+        padding:10px;
+        background-color: red;
+        margin:0 10px 0 -20px;
+    }
+}
+@media all and (max-width:324px){
+    .bspan{
+        width:100%;
+        height:inherit;
+        display:flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        font-size:1rem;
+        text-align: center;
+    }
+    .hotelsym{
+        font-size: 2rem;
+        border-radius:50%;
+        padding:10px;
+        background-color: red;
+        margin:0 10px 0 -20px;
+    }
+}
+/* -------------------------------Banner End----------------------------- */
+
+/* -------------------------------Check----------------------------- */
+.check{
+    width:100%;
+    height:auto;
+    background-color: #EBEBEB;
+    /* border-image: ; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.checklb{
+    display: inline-block;
+    margin:25px;
+    font-size: 1.1rem;
+}
+.checkinp{
+    margin:25px;
+    width:200px;
+    height:30px;
+}
+.secroom{
+    height:30px;
+    width: 200px;;
+}
+#sbtn{
+    margin:45px;
+    height:30px;
+    width:130px;
+    background-color:#FFCB05 ;
+    border:none;
+}
+#sbtn:focus{
+    outline:none;
+}
+/* -------------------------------Check End----------------------------- */
+
+/* -------------------------------Rooms----------------------------- */
+.rooms{
+    height:auto;
+    width:100%;
+}
+.rooms h1{
+    margin:50px 0 0 0;
+    font-size: 13vh;
+    font-weight: bold;
+    text-align: center;
+}
+.rooms p{
+    font-size:5vh;
+    text-align: center;
+}
+.roomimages{
+    width:100%;
+    margin:50px auto;
+    display:grid;
+    grid-template-rows: repeat(auto-fill,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-auto-rows:1fr;
+}
+.innerimg{
+    margin:20px;
+    text-align: center;
+}
+.innerimg:hover{
+    box-shadow: 0 0 3px black;
+}
+.img2:hover{
+    transform: scale(1.01);
+}
+@media all and (max-width:400px){
+    .rooms h1{
+        margin:50px 0 0 0;
+        font-size: 10vh;
+        font-weight: bold;
+        text-align: center;
+    }
+    .rooms p{
+        font-size:3vh;
+        text-align: center;
+    }
+    .innerimg{
+        margin:10px;
+        text-align: center;
+    }
+}
+/* -------------------------------Rooms End----------------------------- */
+
+/* -------------------------------Rooms Deal----------------------------- */
+.room-deal{
+    margin:100px 0 100px 0;
+    height:80vh;
+    width:100%;
+}
+#imgdeal{
+    width: 100%;
+    height:80vh;
+    box-shadow: 0 0 5px black;
+}
+/* -------------------------------Rooms Deal End----------------------------- */
+
+/* -------------------------------About----------------------------- */
+.about{
+    display:flex;
+    height:auto;
+    width:100%;
+}
+.about img{
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin:0px 20px 30px 100px;
+    width:30%;
+    height:50vh;
+}
+.about-p h1{
+    font-size:5rem;
+    margin-bottom:20px;
+}
+.about-p p{
+    width:80%;
+    margin-bottom:50px;
+}
+.about ol{
+    padding-left:50px;
+    margin-top:-30px;
+}
+.about-p li{
+    /* list-style: symbols('>'); */
+    line-height:30px;
+}
+@media all and (max-width:660px){
+    .about img{
+        display:none;
+    }
+    .about-p{
+        margin:0 0 0 50px;
+    }
+}
+@media all and (max-width:400px){
+    .about-p h1{
+        font-size:4rem;
+        margin-bottom:20px;
+    }
+
+}
+/* -------------------------------About End----------------------------- */
+
+/* -------------------------------Clirev----------------------------- */
+.clirev{
+    height:auto;
+    width:100%;
+    margin:auto;
+    background-color: #F7F7F7;
+    display:grid;
+    grid-template-rows: repeat(auto-fill,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(250px,300px));
+    grid-auto-rows:200px;
+}
+.espan{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.fspan{
+    margin:0 50px 0 50px;
+}
+.fspan:hover{
+    color:red;
+}
+/* -------------------------------Clirev End----------------------------- */
+
+/* -------------------------------Staff----------------------------- */
+.staff{
+    height:auto;
+    width:90%;
+    margin:auto;
+}
+.staff h1{
+    text-align:center;
+    font-weight: bold;
+    font-size: 6rem;
+}
+.staff p{
+    text-align:center;
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+}
+.divimg{
+    height:auto;
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.staff div img{
+    box-shadow: 1px 1px 5px black;
+}
+@media all and (max-width:1332px){
+    .divimg{
+        height:auto;
+        width:90%;
+        margin:40px auto;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .staff div img{
+        margin:40px auto;
+        box-shadow: 1px 1px 5px black;
+    }
+}
+/* -------------------------------Staff End----------------------------- */
+
+
+
+/* -------------------------------Footer----------------------------- */
+
+.footer{
+    width:100%;
+    height:auto;
+    background-color: #111111; 
+    column-count: 2;
+    column-rule: 2px solid wheat;  
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.foo1,.foo3{   
+    height:inherit;
+    color:white;
+}
+.foo1 h1,p,.foo3 h1,p,a{
+    padding:20px;
+}
+.foo1 ul li{
+    list-style: none;
+}
+.footer2{
+    width:100%;
+    height:10vh;
+    background-color: #202020;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foo2a{
+    padding:0 0 0 100px;
+    /* background-color: orangered; */
+    color:white;
+}
+.foo2b{
+    margin-right:50px;
+    color:white;
+    /* background-color: orchid; */
+}
+
+@media all and (max-width:700px){
+    .footer{
+        width:100%;
+        height:auto;
+        background-color: #111111; 
+        column-count: 2;
+        column-rule: 2px solid wheat;  
+        display:flex;
+        flex-direction: column;
+        padding-bottom:10px;
+    }
+    .foo1{
+        padding-bottom:10px;
+        border-bottom:2px solid wheat;
+    }
+    .footer2{
+        width:100%;
+        height:10vh;
+        background-color: #202020;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+/* -------------------------------Footer End----------------------------- */
